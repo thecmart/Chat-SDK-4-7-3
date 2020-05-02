@@ -80,6 +80,10 @@ dependencies {
 
 apply plugin: 'com.google.gms.google-services'
 
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.thecmart'
+
 task copyDependencies(type: Copy) {
     from configurations.compile
     into 'dependencies'
